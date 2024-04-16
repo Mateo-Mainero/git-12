@@ -1,0 +1,326 @@
+                               /* Estilos De Body*/
+body{
+  color: black;
+  background-color: blueviolet;
+ }
+                              /*Fin De Estilos De Body*/
+
+
+
+                               /* Estilos De Header*/
+ header{
+  background-color: whitesmoke;
+  margin: 10px 10px;
+  padding: 20px 100px;
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+
+  box-shadow: 5px 5px 15px whitesmoke;
+  
+ 
+ }
+
+ header nav ul a {
+  color: whitesmoke;
+  list-style: none;
+  text-decoration: none;
+  
+
+ }
+
+ header nav ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 5%;
+  
+  
+ }
+
+                          /* Fin De Estilos De Header*/
+
+
+                          /*Estilos de Main Pagina Principal*/
+ main{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  flex-wrap: wrap;
+
+
+
+
+ }
+
+ main .img {
+    display: flex;
+  justify-content: center;
+ }
+
+ 
+main div h1{
+  color: whitesmoke;
+  background-color: black;
+  margin: 40px 20px; 
+  padding: 10px 10px;
+  box-shadow: 5px 5px 10px whitesmoke;
+  
+
+}
+
+
+ main .textos h1 span {
+  display: block;
+}
+
+ main .textos h1{
+  margin: 10px 0px;
+ }
+ 
+ main .textos{
+  text-align: center;
+ }
+ 
+ main .textos .boton {
+  background-color: black;
+  color: whitesmoke;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 2px 3px 5px whitesmoke;
+ }  
+
+ 
+
+                             /*Fin De Estilos De Main*/
+
+
+
+                             /* GRID */
+
+ main div img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+ }
+
+ main .contenedor {
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 29%);
+  gap: 2rem;
+  object-fit: cover;
+  box-sizing: border-box;
+  margin: 30px 20px;
+ }
+
+
+
+                            /* FIN DE GRID*/
+
+                            /* Estilos De Section*/
+
+ section{
+ background-color: whitesmoke;
+ color: black; 
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ padding: 20px;
+ margin: 40px 20px;
+ box-shadow: 5px 5px 15px whitesmoke;
+ }
+  /* bootstrap*/
+
+  .color-bg:hover{
+    background-color: blueviolet;
+  } 
+
+
+
+
+
+                            /*Fin De Estilos De Section*/
+
+                            /*Estilos De Footer*/
+ footer p {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  
+                          /*Fin De Estilos De Footer*/
+
+                          /*Reset*/
+  
+ }
+ *{ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+ }
+                         /*Fin De Reset*/
+
+
+                                /* mq de tablet*/
+
+ @media screen and (min-width: 600px){
+ 
+  /* mq de pagina principal*/
+
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding: 10px 0px;
+  }
+  
+  main .contenedor{
+    height: 90vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 45%);
+
+  }
+
+ main .img-dieciocho {
+  grid-column: span 2;
+ }
+
+ /*mq de pagina dos de auriculares*/
+ main .contenedor-dos{
+  height: 90vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 55%);
+ }
+ main .img-cinco {
+  grid-column: span 2;
+ }
+ main .img-once {
+  grid-column: span 2;
+ }
+ main .texto-dos {
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+  margin: 40px 20px;
+  box-shadow: 5px 5px 10px whitesmoke;
+ }
+
+ /*mq de pagina de joystick*/
+ 
+ main .contenedor-tres {
+  height: 90vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 45%);
+  
+ }
+
+ }
+
+                                  /* Pseudoclases*/
+
+
+ a:hover {
+  background-color: blueviolet;
+  text-shadow: whitesmoke;
+  color: black;
+  font-size: 16px;
+
+ }
+ .img-dieciseis:hover{
+ border-radius: 1px solid;
+ box-shadow: 2px 3px 4px whitesmoke;
+
+ }
+
+ .img-diecisiete:hover{
+  border-radius: 1px solid;
+  box-shadow: 2px 3px 4px whitesmoke;
+ }
+
+
+ .img-dieciocho:hover{
+  border-radius: 1px solid;
+  box-shadow: 2px 3px 4px whitesmoke;
+ }
+
+ /* Pseudoclases Pagina Dos*/
+
+
+ .img-tres:hover{
+  border-radius: 1px solid;
+  box-shadow: 2px 3px 4px whitesmoke;
+ }
+
+ .img-cuatro:hover{
+  border-radius: 1px solid;
+  box-shadow: 2px 3px 4px whitesmoke;
+ }
+  
+ .img-cinco:hover{
+  border-radius: 1px solid;
+  box-shadow: 2px 3px 4px whitesmoke;
+ }
+
+                          /* Pagina Dos Auriculares*/
+
+
+
+
+                            /* Grid */
+
+ main .contenedor-dos {
+ 
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(3, 29%);
+ gap: 2rem;
+ 
+ object-fit: cover;
+ 
+ margin: 20px 10px;
+
+ }
+ 
+ main .contenedor-dos img {
+  height: 100%;
+  width: 100%;
+  
+ }
+                          /* Fin Del Grid*/
+
+ main .texto-dos {
+ text-align: center;
+ color: whitesmoke;
+ background-color: black;
+ margin: 40px 20px;
+ box-shadow: 5px 5px 10px whitesmoke;
+}
+
+                           /*Pagina De Joystick*/
+
+
+main .contenedor-tres{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 29%);
+  gap: 2rem;
+  object-fit: cover;
+  box-sizing: border-box;
+  margin: 30px 20px;
+}
+
+
+
+
+  
+
+
+
+
+ 
+ 
